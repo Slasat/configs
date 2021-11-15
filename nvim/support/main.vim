@@ -1,17 +1,6 @@
-call plug#begin()
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'rust-lang/rust.vim'
-Plug 'vim-syntastic/syntastic'
-Plug 'majutsushi/tagbar'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'nathanaelkane/vim-indent-guides'
-call plug#end()
-
 let mapleader = " "
 
 map <leader>db :bd<CR>
-map <leader>b :CtrlPBuffer<CR>
 
 nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
 
@@ -23,6 +12,7 @@ set undofile
 set undodir=~/.vim/undo
 
 set number
+set relativenumber
 
 set tabstop=4
 set softtabstop=4
@@ -35,7 +25,14 @@ set list
 
 let g:rustfmt_autosave = 1
 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+set mouse=a
 
 nmap <F8> :TagbarToggle<CR>
+
+" Rainbow braces
+let g:rainbow_active = 1
+let g:rainbow_load_separately = [  [ '*' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],  [ '*.tex' , [['(', ')'], ['\[', '\]']] ],  [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],  [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],  ]
+let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
+
+nmap <C-j> <C-d>
+nmap <C-k> <C-u>
