@@ -1,6 +1,12 @@
 # Overview
 My config for neovim
 
+# Requirements
+* fzf
+* ripgrep
+* fasd
+* vimplug
+
 # Quick Installation
 
 ``` bash
