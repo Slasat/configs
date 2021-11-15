@@ -1,5 +1,5 @@
 # Overview
-My config for vim
+My config for neovim
 
 # Quick Installation
 
