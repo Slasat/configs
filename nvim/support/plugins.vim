@@ -7,7 +7,7 @@ call plug#begin()
     Plug 'psliwka/vim-smoothie'
     Plug 'frazrepo/vim-rainbow'
     Plug 'scrooloose/nerdcommenter'
-    "Plug 'airblade/vim-rooter'
+    Plug 'airblade/vim-rooter'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
 call plug#end()
