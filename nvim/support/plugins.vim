@@ -10,4 +10,7 @@ call plug#begin()
     Plug 'airblade/vim-rooter'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'morhetz/gruvbox'
+    Plug 'itchyny/lightline.vim'
+    Plug 'tpope/vim-fugitive'
 call plug#end()
